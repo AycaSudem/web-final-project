@@ -1,4 +1,4 @@
-# NextCampus
+# Campus Loop
 
 Next.js 14 + Prisma + PostgreSQL starter for a university tech/AI social network.
 
@@ -71,7 +71,7 @@ Open `http://localhost:3000`.
 - `/login` / `/register`
 
 ## Repository
-- GitHub: https://github.com/alizeyavas/web-final-project.git
+- GitHub: https://github.com/AycaSudem/web-final-project
 
 ## TODO (Intentional)
 - Input validation rules + sanitization
