@@ -1,13 +1,22 @@
-# Campus Loop Backend
+# NextCampus
 
-Backend API + Prisma for the Campus Loop project.
+Next.js 14 + Prisma + PostgreSQL starter for a university tech/AI social network.
+
+## Features (MVP)
+- Email/password auth (NextAuth Credentials + bcrypt)
+- Post feed, post detail, comments, like toggle
+- Events list/detail + Add to Calendar (.ics)
+- Ownership-based delete for posts/events
+- Seeded demo data
 
 ## Tech
-- Next.js API Routes
+- Next.js 14 (App Router) + TypeScript
+- TailwindCSS
 - Prisma ORM
 - PostgreSQL (Docker)
+- Zod validation (basic)
 
-## Setup
+## Getting Started
 
 ### 1) Environment
 Copy and edit the env file:
@@ -16,7 +25,7 @@ Copy and edit the env file:
 cp .env.example .env
 ```
 
-Set `DATABASE_URL`, `NEXTAUTH_SECRET`, `NEXTAUTH_URL`.
+Make sure `DATABASE_URL`, `NEXTAUTH_SECRET`, `NEXTAUTH_URL` are set.
 
 ### 2) Database
 Start Postgres:
@@ -44,5 +53,29 @@ npx prisma db seed
 npm run dev
 ```
 
+Open `http://localhost:3000`.
+
+## Demo Accounts
+- `alice@example.com` / `password123`
+- `berk@example.com` / `password123`
+
+## Routes
+- `/` Home feed
+- `/posts` Posts list
+- `/posts/[id]` Post detail
+- `/posts/new` Create post (auth)
+- `/events` Events list
+- `/events/[id]` Event detail
+- `/events/new` Create event (auth)
+- `/events/[id]/calendar` Download `.ics`
+- `/login` / `/register`
+
 ## Repository
-- GitHub: https://github.com/AycaSudem/web-final-project.git
+- GitHub: https://github.com/alizeyavas/web-final-project.git
+
+## TODO (Intentional)
+- Input validation rules + sanitization
+- Pagination, search, and filtering
+- Edit flows for posts/events
+- Moderation / admin tools
+- RSVP + calendar sync
