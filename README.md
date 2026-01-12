@@ -56,8 +56,8 @@ npm run dev
 Open `http://localhost:3000`.
 
 ## Demo Accounts
-- `alice@example.com` / `password123`
-- `berk@example.com` / `password123`
+- `alize@st.biruni.edu.tr` / `password123`
+- `ayca@st.biruni.edu.tr` / `password123`
 
 ## Routes
 - `/` Home feed
@@ -79,4 +79,5 @@ Open `http://localhost:3000`.
 - Edit flows for posts/events
 - Moderation / admin tools
 - RSVP + calendar sync
+
 
